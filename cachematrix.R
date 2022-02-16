@@ -17,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
     list(set = set,
          get = get,
          getinverse = getinverse,
-        setinverse = setinverse) # return a list of methods
+         setinverse = setinverse) # return a list of methods
 }else{
      return(message("The matris is not invertible."))
 }
