@@ -5,7 +5,7 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
-}if (ncol(x)==nrow(x) && det(x)!=0) { #ensure that the matrix is invertible
+if (ncol(x)==nrow(x) && det(x)!=0) { #ensure that the matrix is invertible
     m <- NULL
     set <- function(y) { #set the matrix
             x <<- y
@@ -41,11 +41,11 @@ m <- x$getinverse() ## Return a matrix that is the inverse of 'x'
 # testing
 x <-makeCacheMatrix(matrix(c(1,0,-1,1,-1,1,0,1,0),3,3))
 cacheSolve(x)
-     [,1] [,2] [,3]
-[1,]  0.5    0 -0.5
-[2,]  0.5    0  0.5
-[3,]  0.5    1  0.5
+#     [,1] [,2] [,3]
+#[1,]  0.5    0 -0.5
+#[2,]  0.5    0  0.5
+#[3,]  0.5    1  0.5
 
 x <-makeCacheMatrix(matrix(c(1,2,3,4,5,6,7,8,9),ncol=3,nrow=3))
-The matris is not invertible.
+#The matris is not invertible.
 
